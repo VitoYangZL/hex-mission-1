@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
+* {
+  font-family: "Noto Sans TC", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.body-container {
+  width: 940px;
+  margin: 30px auto;
+}
+
+.body-container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body-container nav .logo {
+  height: 40px;
+}
+
+.body-container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body-container nav ul li {
+  color: #3f5d45;
+  list-style: none;
+  margin-right: 60px;
+}
+
+.body-container nav ul .cart {
+  width: 24px;
+  height: 24px;
+}
+
+.body-container .banner {
+  margin-bottom: 30px;
+}
+
+.body-container .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body-container .main-container .class-container {
+  width: 300px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.body-container .main-container .class-container .class-title {
+  color: #fff;
+  background-color: #3f5d45;
+  padding: 20.5px 0;
+}
+
+.body-container .main-container .class-container .class-checked {
+  color: #3f5d45;
+  background-color: #eaf0ed;
+  padding: 20.5px 0;
+}
+
+.body-container .main-container .class-container .class-regular {
+  color: #3f5d45;
+  background-color: #fff;
+  padding: 20.5px 0;
+  outline: 1px solid #eaf0ed;
+}
+
+.body-container .main-container .item-container {
+  width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.body-container .main-container .item-container .item {
+  margin-left: 20px;
+  position: relative;
+}
+
+.body-container .main-container .item-container .item::before {
+  content: "本日精選";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 30px;
+  height: 100px;
+  color: #fff;
+  background-color: #3f5d45;
+  top: 0;
+  left: 30px;
+}
+
+.body-container .main-container .item-container .item::after {
+  content: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true);
+  position: absolute;
+  top: 19px;
+  right: 22px;
+}
+
+.body-container .main-container .item-container .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  font-size: 20px;
+  color: #3f5d45;
+}
+
+.body-container .main-container .item-container .item .info .name {
+  width: 173px;
+  padding: 14px 28px 14px 33px;
+}
+
+.body-container .main-container .item-container .item .info .price {
+  width: 127px;
+  padding: 14px 20px 14px 25px;
+}
+
+.body-container .main-container .item-container .item button {
+  width: 300px;
+  border: none;
+  font-size: 24px;
+  padding: 20.5px 0;
+  margin-bottom: 30px;
+  background-color: #eaf0ed;
+  color: #3f5d45;
+}
+
+.body-container .page-list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.body-container .page-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  outline: #eaf0ed 1px solid;
+  width: 60px;
+  height: 60px;
+}
+
+.body-container .page-list .pages-checked {
+  background-color: #3f5d45;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

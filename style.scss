@@ -24,14 +24,28 @@ body {
     }
     ul {
       display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
       li {
         color: #3f5d45;
         list-style: none;
         margin-right: 60px;
+        cursor: pointer;
+        &:hover {
+          color: white;
+          background-color: #3f5d45;
+        }
       }
       .cart {
+        cursor: pointer;
         width: 24px;
         height: 24px;
+        transition: all 0.15s ease;
+        &:hover {
+          scale: 1.05;
+        }
       }
     }
   }
@@ -44,14 +58,10 @@ body {
       width: 300px;
       font-size: 24px;
       text-align: center;
+      cursor: pointer;
       .class-title {
         color: #fff;
         background-color: #3f5d45;
-        padding: 20.5px 0;
-      }
-      .class-checked {
-        color: #3f5d45;
-        background-color: #eaf0ed;
         padding: 20.5px 0;
       }
       .class-regular {
@@ -59,6 +69,14 @@ body {
         background-color: #fff;
         padding: 20.5px 0;
         outline: 1px solid #eaf0ed;
+        &:hover {
+          outline: 1px solid #3f5d45;
+        }
+      }
+      .class-checked {
+        color: #3f5d45;
+        background-color: #eaf0ed;
+        padding: 20.5px 0;
       }
     }
     .item-container {
@@ -85,6 +103,10 @@ body {
           position: absolute;
           top: 19px;
           right: 22px;
+          &:hover {
+            cursor: pointer;
+            color: #fff;
+          }
         }
         .info {
           display: flex;
@@ -101,6 +123,7 @@ body {
           }
         }
         button {
+          cursor: pointer;
           width: 300px;
           border: none;
           font-size: 24px;
@@ -108,6 +131,10 @@ body {
           margin-bottom: 30px;
           background-color: #eaf0ed;
           color: #3f5d45;
+          &:hover {
+            background-color: #3f5d45;
+            color: white;
+          }
         }
       }
     }
@@ -124,6 +151,11 @@ body {
       outline: #eaf0ed 1px solid;
       width: 60px;
       height: 60px;
+      cursor: pointer;
+      &:hover {
+        background-color: #eaf0ed;
+        color: #000;
+      }
     }
     .pages-checked {
       background-color: #3f5d45;
